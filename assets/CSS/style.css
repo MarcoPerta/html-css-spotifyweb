@@ -11,6 +11,11 @@
 .wht{
     color: white;
 }
+
+.centering{
+    width: 90%;
+    margin: auto;
+}
 /* utilities
 ------------------ */ 
 
@@ -29,6 +34,40 @@ body{
     background-color: black;
     height: 80%;
 }
+
+.container-sidebar{
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container-sidebar, .searchbar,.userbar{
+    flex-direction: column;
+}
+
+.searchbar img, .user-gray{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.user-gray img{
+    width: 20px;
+    height: 20px;
+}
+
+.user-gray{
+    background-color: grey;
+    border-radius: 50%;
+    background-image: url(../img/profile.svg);
+    background-position: center;
+}
+
+.arrow{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
 /* fine sezione sidebar */
 /* inizio sezione main */
 
@@ -47,8 +86,59 @@ body{
 
 .do-upgrade{
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
     position: sticky;
     top: 0;
     text-align: right;
+}
+
+.navigation{
+    background-color: azure;
+}
+
+.recently-played, .created-for-user,.popular-artist{
+    flex-wrap: wrap;
+}
+
+.recently-played figure, .created-for-user figure, .popular-artist figure{
+    width: calc(100% / 2);
+    padding: 5px;
+}
+
+.created-for-user{
+    background-color: blueviolet;
+}
+
+.recently-played{
+    background-color: blue;
+}
+
+.recently-played figure{
+    background-color: red;
+    /* height: 172px; metti altezza dopo che verrà */
+}
+
+.created-for-user figure{
+    background-color: burlywood;
+}
+
+.popular-artist figure{
+    background-color: brown;
+}
+/* fine main */
+/* inizio footer */
+.footer div{
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.song{
+    background-color: chocolate;
+}
+
+.player{
+    background-color: palevioletred;
+}
+
+.volume{
+    background-color: lawngreen;
 }
