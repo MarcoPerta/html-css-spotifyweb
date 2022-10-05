@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.wht{
+    color: white;
+}
+/* utilities
+------------------ */ 
+
+body{
+    background-color: #222326;
+}
+
+.container-body{
+    width: 100vw ;
+    height: 100vh ;
+    flex-wrap: wrap;
+}
+
+/* inizio sezione sidebar */
+.sidebar{
+    background-color: black;
+    height: 80%;
+}
+/* fine sezione sidebar */
+/* inizio sezione main */
+
+.main{
+    background-color: lightseagreen;
+    flex: 1;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.footer{
+    width: 100%;
+    height: 20%;
+    background-color: green;;
+}
+
+.do-upgrade{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    text-align: right;
+}
