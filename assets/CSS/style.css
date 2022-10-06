@@ -211,9 +211,6 @@ figure h4{
     .recently-played figure,.created-for-user figure, .popular-artist figure{
         width: calc(100% / 6) ;
     }
-    .recently-played, .created-for-user,.popular-artist{
-        flex-wrap: nowrap;
-    }  
 }
 /* fine main */
 
@@ -221,15 +218,43 @@ figure h4{
 .footer{
     width: 100%;
     height: 100px;
-    background-color: green;;
+    background-color: #616467;
 }
 
-.footer div{
+.song, .player, .volume{
     width: calc(100% / 3);
     height: 100%;
 }
 
 .song{
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.song img{
+    width: 100%;
+}
+
+.song-name{
+    padding-left: 10px;
+}
+
+.heart-folder{
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.fa-heart{
+    margin-bottom: 2px;
+}
+
+.push-player{
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+
+/* .song{
     background-color: chocolate;
 }
 
@@ -239,4 +264,4 @@ figure h4{
 
 .volume{
     background-color: lawngreen;
-}
+} */
