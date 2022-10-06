@@ -16,9 +16,11 @@
     width: 90%;
     margin: auto;
 }
+
+
 /* utilities
 ------------------ */ 
-
+/* proprietà body e contenitore di tutto il contenuto */
 body{
     background-color: #222326;
 }
@@ -28,11 +30,15 @@ body{
     height: 100vh ;
     flex-wrap: wrap;
 }
-
+/* fine proprietà body e container */
 /* inizio sezione sidebar */
 .sidebar{
     background-color: black;
     height: 80%;
+}
+
+.searchbar{
+    margin: 5px;
 }
 
 .container-sidebar{
@@ -44,10 +50,24 @@ body{
     flex-direction: column;
 }
 
-.searchbar img, .user-gray{
+.logo-big, .sp-home, .sp-search, .sp-library{
+    display: none;
+}
+
+.logo-small img,.home img,.search img,.library img,.user-gray{
     width: 20px;
     height: 20px;
-    margin: 5px;
+}
+
+.square-grey{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    margin-top: 5px;
+}
+
+.square-grey i{
+    font-size: 30px;
 }
 
 .user-gray img{
@@ -68,6 +88,23 @@ body{
     margin: 5px;
 }
 
+/* inizio sidebar per tablet e pc */
+@media screen and (min-width: 426px){
+    .logo-big, .sp-home, .sp-search, .sp-library{
+        display: block;
+        padding: 7px 0px;
+    }
+
+    .logo-big img{
+        width: 130px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .logo-small{
+        display: none;
+    }
+}
 /* fine sezione sidebar */
 /* inizio sezione main */
 
