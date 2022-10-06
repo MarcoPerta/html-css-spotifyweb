@@ -55,7 +55,8 @@ body{
 .container-sidebar, .searchbar,.userbar{
     flex-direction: column;
 }
-
+/* ------------------ */
+/* loghi sidebar */
 .logo-big, .sp-home, .sp-search, .sp-library, .playlisth4,.square-grey, .name-playlist, .create-playlist, .sp-arrow, .my-name, .divide{
     display: none;
 }
@@ -74,6 +75,8 @@ body{
 
 .square-grey i{
     font-size: 30px;
+    color: black;
+    padding: 10px 12px;
 }
 
 .create-playlist{
@@ -114,6 +117,8 @@ body{
 .divide{
     width: 70%;
 }
+/* ----------------------- */
+/* fine loghi sidebar */
 
 /* inizio sidebar per tablet e pc */
 @media screen and (min-width: 426px){
@@ -144,6 +149,10 @@ body{
     .logo-small{
         display: none;
     }
+    
+    /* .container-sidebar{
+        overflow-y: auto;
+    }    */
 }
 /* fine sezione sidebar */
 /* inizio sezione main */
@@ -154,10 +163,7 @@ body{
     overflow-y: auto;
 }
 
-.navigation, .recently-played, .created-for-user, .popular-artist, .pad{
-    padding: 10px;
-}
-
+/* div per upgrade */
 .do-upgrade{
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
@@ -172,11 +178,17 @@ body{
     padding: 8px 25px;
     border-radius: 20px;
 }
-
+/* ---------------------------- */
+/* barra per la navigazione */
 .navigation{
     justify-content: space-around;
     flex-wrap: wrap;
     height: 110px;
+}
+/* ------------------------------ */
+/* sezione canzoni */
+.navigation, .recently-played, .created-for-user, .popular-artist, .pad{
+    padding: 10px;
 }
 
 .recently-played, .created-for-user,.popular-artist{
@@ -200,18 +212,27 @@ figure img{
 figure h4{
     padding: 10px 0px;
 }
+/* ---------------------------- */
 /* inizio main per tablet */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .recently-played figure,.created-for-user figure, .popular-artist figure{
+        width: calc(100% / 3);
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .recently-played figure,.created-for-user figure, .popular-artist figure{
         width: calc(100% / 4);
     }
 }
-/* inizio main per tablet */
+/* fine main per tablet */
+/* inizio main per pc */
 @media screen and (min-width: 1025px){
     .recently-played figure,.created-for-user figure, .popular-artist figure{
         width: calc(100% / 6) ;
     }
-}
+}    
+/* fine main per pc */
 /* fine main */
 
 /* inizio footer */
@@ -221,18 +242,24 @@ figure h4{
     background-color: #616467;
 }
 
+/* divisione footer in sezioni e flex */
 .song, .player, .volume{
     width: calc(100% / 3);
     height: 100%;
 }
 
-.song{
-    justify-content: space-between;
+.song, .push-player{
+    justify-content: center;
+}
+/* ---------------------------------- */
+/* interno delle sezioni */
+.song, .volume{
     padding: 20px 10px;
 }
 
 .song img{
     width: 100%;
+    height: 100%;
 }
 
 .song-name{
@@ -248,20 +275,20 @@ figure h4{
     margin-bottom: 2px;
 }
 
-.push-player{
-    justify-content: space-between;
-    padding: 15px 0px;
+.push-player i, .volume i{
+    padding: 15px 6px;
+}
+/* ------------------------------ */
+/* icone cuore e cartella affiancate per tablet e pc */
+@media screen and (min-width: 427px){
+    .heart-folder{
+        flex-direction: row;
+    }
+
+    .fa-heart{
+        padding-right: 5px;
+    }
 }
 
 
-/* .song{
-    background-color: chocolate;
-}
 
-.player{
-    background-color: palevioletred;
-}
-
-.volume{
-    background-color: lawngreen;
-} */
