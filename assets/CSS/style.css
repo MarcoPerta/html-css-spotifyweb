@@ -278,6 +278,36 @@ figure h4{
 .push-player i, .volume i{
     padding: 15px 6px;
 }
+
+.player-vol{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bar-vol, .bar-time{
+    background-color: lightgray;
+    height: 4px;
+    border-radius: 3px 3px 3px 4px;
+}
+
+.bar-vol{
+    width: 70%;
+}
+
+.player-vol span{
+    font-size: 12px;
+}
+
+.bar-time{
+    width: 40%;
+    margin-left: 5px;
+}
+
+.volume div{
+    align-items: center;
+    flex-wrap: wrap;
+}
 /* ------------------------------ */
 /* icone cuore e cartella affiancate per tablet e pc */
 @media screen and (min-width: 427px){
@@ -290,5 +320,10 @@ figure h4{
     }
 }
 
+@media screen and (min-width: 426px){
+    .volume div{
+        flex-wrap: nowrap;
+    }
+}
 
 
