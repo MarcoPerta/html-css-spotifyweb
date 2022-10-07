@@ -20,6 +20,9 @@
     text-align: center;
 }
 
+.rltv{
+    position: relative;
+}
 
 /* utilities
 ------------------ */ 
@@ -178,6 +181,14 @@ body{
     padding: 8px 25px;
     border-radius: 20px;
 }
+
+.btn {
+    transition: transform 1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
 /* ---------------------------- */
 /* barra per la navigazione */
 .navigation{
@@ -212,6 +223,24 @@ figure img{
 figure h4{
     padding: 10px 0px;
 }
+
+figure .fa-circle-play{
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+figure:hover .fa-circle-play{
+    display: block;
+}
+
+figure:hover img{
+    filter: contrast(130%)
+}
+
 /* ---------------------------- */
 /* inizio main per tablet */
 @media screen and (min-width: 426px) and (max-width: 768px){
@@ -326,4 +355,13 @@ figure h4{
     }
 }
 
+/* scritte hover bianche */
 
+.searchbar div:hover,.searchbar h4:hover,.searchbar p:hover, .userbar .arrow:hover, .userbar .my-name:hover,.navigation div:hover {
+    color: white;
+}
+
+.searchbar .square-grey:hover{
+    background-color: white;
+}
+/* ------------------------------- */
