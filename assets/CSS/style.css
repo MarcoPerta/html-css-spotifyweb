@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex{
@@ -120,6 +121,7 @@ body{
 .divide{
     width: 70%;
 }
+
 /* ----------------------- */
 /* fine loghi sidebar */
 
@@ -153,9 +155,9 @@ body{
         display: none;
     }
     
-    /* .container-sidebar{
+    .container-sidebar{
         overflow-y: auto;
-    }    */
+    }   
 }
 /* fine sezione sidebar */
 /* inizio sezione main */
@@ -173,6 +175,7 @@ body{
     top: 0;
     text-align: right;
     padding: 10px 5px;
+    z-index: 2;
 }
 
 .btn{
@@ -331,9 +334,10 @@ figure:hover img{
 .bar-time{
     width: 40%;
     margin-left: 5px;
+    display: inline-block;
 }
 
-.volume div{
+.volume {
     align-items: center;
     flex-wrap: wrap;
 }
